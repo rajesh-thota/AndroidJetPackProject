@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">NYCSchool</string>
+    <string name="project_selector_regular_ui">Regular UI</string>
+    <string name="project_selector_compose_ui">Compose UI</string>
+    <string name="schools_list">Schools List</string>
+    <string name="fetching_sat_data">fetching sat data</string>
+    <string name="reading_and_decrypting_records_from_database">Reading and decrypting records from database</string>
+    <string name="fetching_data">fetching data</string>
+    <string name="if_more_time_is_allowed_i_can_implement_the_same_in_compose_ui_too_thanks">If more time is allowed, I can implement the same in Compose UI too. Thanks!</string>
+</resources>

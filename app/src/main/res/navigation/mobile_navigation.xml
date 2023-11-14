@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@id/project_selector_fragment">
+
+    <fragment
+        android:id="@+id/project_selector_fragment"
+        android:name="com.example.nycschool.ui.projectselector.ProjectSelectorFragment"
+        tools:layout="@layout/fragment_project_selector">
+
+        <action
+            android:id="@+id/action_project_selector_fragment_to_school_list_fragment"
+            app:destination="@id/school_list_fragment" />
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/school_list_fragment"
+        android:name="com.example.nycschool.ui.schoollist.SchoolListFragment"
+        tools:layout="@layout/fragment_school_list">
+
+        <action
+            android:id="@+id/action_school_list_fragment_to_sat_data_fragment"
+            app:destination="@id/sat_data_fragment" />
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/sat_data_fragment"
+        android:name="com.example.nycschool.ui.satdata.SatDataFragment"
+        tools:layout="@layout/fragment_sat_data">
+
+        <argument
+            android:name="dbn"
+            app:argType="string" />
+
+    </fragment>
+
+</navigation>
